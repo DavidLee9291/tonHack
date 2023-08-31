@@ -1,6 +1,5 @@
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
-import IconButton from "@mui/material/IconButton";
 import filter from "../../assets/filter.svg";
 import { Grid } from "@mui/material";
 
@@ -21,13 +20,14 @@ export default function SearchBar() {
       >
         <InputBase sx={{ ml: 1, flex: 1 }} name="search_bar" />
       </Paper>
-      <IconButton
+      <button
         type="button"
-        sx={{
+        style={{
           p: "10px 20px",
           background: "#EE85A8",
           width: "45.235px",
           borderRadius: "18px",
+          border: "0",
         }}
         aria-label="filter"
       >
@@ -36,7 +36,7 @@ export default function SearchBar() {
           alt="filter"
           style={{ width: "13px", height: "auto" }}
         />
-      </IconButton>
+      </button>
     </Grid>
   );
 }
