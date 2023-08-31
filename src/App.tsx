@@ -7,7 +7,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/tonHack/main" element={<Main />} />
+          <Route path="/tonHack" element={<Main />} />
         </Routes>
       </BrowserRouter>
     </div>
