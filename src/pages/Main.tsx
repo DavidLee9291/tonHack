@@ -134,7 +134,7 @@ export default function Main(): JSX.Element {
             width: "236px",
             height: "auto",
             transform: "translateY(-5px)",
-            zindex: "0",
+            zIndex: "0",
           }}
         />
       </Grid>
