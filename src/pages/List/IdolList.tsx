@@ -9,6 +9,7 @@ import idol5 from "../../assets/photo_list_5.svg";
 import idol6 from "../../assets/photo_list_6.svg";
 import dot from "../../assets/dot.svg";
 
+// TODO: 임시 데이터 데이터 바인딩 필요
 const idols = [
   {
     id: "1",
@@ -112,7 +113,7 @@ export default function IdolList(): JSX.Element {
         sx={{
           marginTop: "17px",
           justifyContent: "center",
-          gap: "4.1px 5%",
+          gap: "4.1px 2%",
         }}
       >
         {idols.map((idol, index) => (
@@ -122,9 +123,7 @@ export default function IdolList(): JSX.Element {
             xs
             style={{
               flex: "0 0 auto",
-              minWidth: "60px",
-              maxWidth: "200px",
-              width: "100%",
+              maxWidth: "150px",
               aspectRatio: "150.349/233.725",
               background: "#FFF",
               borderRadius: "5.88px",
@@ -148,7 +147,6 @@ export default function IdolList(): JSX.Element {
                 borderRadius: "5.88px",
                 backgroundImage: `url(${idol.image})`,
                 backgroundSize: "cover",
-                backgroundPosition: "50% 30%", // 이미지를 약간 아래쪽으로 이동시킴
                 backgroundRepeat: "no-repeat",
               }}
             ></div>
@@ -162,7 +160,6 @@ export default function IdolList(): JSX.Element {
                 border: "0.298px solid #FFF",
                 padding: "10px",
                 display: "flex",
-
                 justifyContent: "center",
                 zIndex: 10,
                 backdropFilter: "blur(3.4170305728912354px)",
