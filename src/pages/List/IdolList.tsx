@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import arrowLeft from "../../assets/arrow_left.svg";
 import idol3 from "../../assets/photo_list_3.svg";
 import idol4 from "../../assets/photo_list_4.svg";
@@ -11,49 +11,55 @@ import dot from "../../assets/dot.svg";
 
 const idols = [
   {
+    id: "1",
     image: idol1,
-    name: "Idol 1",
-    number: 1,
+    name: "Jisoo ",
+    number: "#77",
     nftPrice: "30",
     creator: "david lee",
     creatorPrice: "30",
   },
   {
+    id: "2",
     image: idol2,
-    name: "Idol 2",
-    number: 2,
+    name: "Rosé",
+    number: "#86",
     nftPrice: "6",
     creator: "david lee",
     creatorPrice: "6",
   },
   {
+    id: "3",
     image: idol3,
-    name: "Idol 3",
-    number: 3,
+    name: "Jennie",
+    number: "#77",
     nftPrice: "6",
     creator: "david lee",
     creatorPrice: "6",
   },
   {
+    id: "4",
     image: idol4,
-    name: "Idol 4",
-    number: 4,
+    name: "Lisa",
+    number: "#23",
     nftPrice: "6",
     creator: "david lee",
     creatorPrice: "6",
   },
   {
+    id: "5",
     image: idol5,
-    name: "Idol 5",
-    number: 5,
+    name: "aespa",
+    number: "5",
     nftPrice: "6",
     creator: "david lee",
     creatorPrice: "6",
   },
   {
+    id: "6",
     image: idol6,
-    name: "Idol 6",
-    number: 6,
+    name: "aespa",
+    number: "6",
     nftPrice: "6",
     creator: "david lee",
     creatorPrice: "6",
@@ -253,21 +259,23 @@ export default function IdolList(): JSX.Element {
                   {idol.creatorPrice} TON
                 </p>
               </Grid>
-              <button
-                style={{
-                  width: "100%",
-                  background: "rgba(255, 255, 255, 0.39)",
-                  color: "#FFF",
-                  border: "0.298px solid #FFF",
-                  borderRadius: "2.979px",
-                  padding: "8px 16px",
-                  marginTop: "8px",
-                  cursor: "pointer",
-                  backdropFilter: "blur(1.9863028526306152px)",
-                }}
-              >
-                Collect Now
-              </button>
+              <Link key={index} to={`/tonHack/nftDetail/:${idol.id}`}>
+                <button
+                  style={{
+                    width: "100%",
+                    background: "rgba(255, 255, 255, 0.39)",
+                    color: "#FFF",
+                    border: "0.298px solid #FFF",
+                    borderRadius: "2.979px",
+                    padding: "8px 16px",
+                    marginTop: "8px",
+                    cursor: "pointer",
+                    backdropFilter: "blur(1.9863028526306152px)",
+                  }}
+                >
+                  Collect Now
+                </button>
+              </Link>
             </Grid>
           </Grid>
         ))}
