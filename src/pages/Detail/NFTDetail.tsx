@@ -9,10 +9,12 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import NFTDetailTable from "src/components/Table/NFTDetailTable";
 import NFTDetailChart from "src/components/Chart/NFTDetailChart";
+import BuyModal from "src/components/Modal/BuyModal";
 
 export default function NFTDetail(): JSX.Element {
   const navigate = useNavigate();
   const [tab, setTab] = useState(1);
+  const [open, setOpen] = useState(false);
 
   const goBack = () => {
     navigate(-1); // 뒤로가기 실행
@@ -305,10 +307,14 @@ export default function NFTDetail(): JSX.Element {
             fontStyle: "normal",
             fontWeight: 700,
           }}
-          onClick={() => setTab(2)}
+          onClick={() => {
+            setTab(2);
+            setOpen(true);
+          }}
         >
           Buy
         </button>
+        <BuyModal open={open} setOpen={setOpen} />
       </Grid>
     </Grid>
   );
