@@ -10,7 +10,7 @@ import jyp from "../../assets/jyp.svg";
 import bighit from "../../assets/bighit.svg";
 import cube from "../../assets/cube.svg";
 import yg from "../../assets/yg.svg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const agencies = [
@@ -119,84 +119,86 @@ export default function Search(): JSX.Element {
           marginTop: "17px",
           justifyContent: "center",
           gap: "7px 5%",
+          padding: "0 0 30px 0",
           overflowY: keyboardVisible ? "scroll" : "hidden",
           maxHeight: keyboardVisible ? "calc(100vh - 300px)" : "none",
         }}
       >
         {agencies.map((agency, index) => (
-          <Grid
-            key={index}
-            item
-            style={{
-              flex: "0 0 auto",
-              minWidth: "60px",
-              maxWidth: "100px",
-              width: "100%",
-              minHeight: "130.8px",
-              background: "#FFF",
-              borderRadius: "5.88px",
-              boxShadow: "0px 5.88046px 8.23264px 0px rgba(0, 0, 0, 0.25)",
-              padding: "12px 4px",
-              marginLeft: "0",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <img
-              src={agency.image}
-              alt={agency.name}
-              style={{
-                width: "100%",
-                height: "auto",
-                maxHeight: "63px",
-                borderRadius: "2.48px",
-              }}
-            />
+          <Link key={index} to={`/tonHack/idolList/:${index}`}>
             <Grid
-              container
               item
-              style={{ textAlign: "center", justifyContent: "center" }}
+              style={{
+                flex: "0 0 auto",
+                minWidth: "60px",
+                maxWidth: "100px",
+                width: "100%",
+                height: "132.8px",
+                background: "#FFF",
+                borderRadius: "5.88px",
+                boxShadow: "0px 5.88046px 8.23264px 0px rgba(0, 0, 0, 0.25)",
+                padding: "12px 4px",
+                marginLeft: "0",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
             >
+              <img
+                src={agency.image}
+                alt={agency.name}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  maxHeight: "63px",
+                  borderRadius: "2.48px",
+                }}
+              />
               <Grid
                 container
                 item
-                sx={{
-                  justifyContent: "center",
-                  padding: "0 8px",
-                  margin: "12.4px 0 4px 0",
-                }}
+                style={{ textAlign: "center", justifyContent: "center" }}
               >
+                <Grid
+                  container
+                  item
+                  sx={{
+                    justifyContent: "center",
+                    padding: "0 8px",
+                    margin: "12.4px 0 4px 0",
+                  }}
+                >
+                  <p
+                    style={{
+                      color: "#151F40",
+                      fontFamily: "Inter",
+                      fontSize: "14.274px",
+                      fontStyle: "normal",
+                      fontWeight: "600",
+                      lineHeight: "normal",
+                      margin: "0",
+                    }}
+                  >
+                    {agency.name}
+                  </p>
+                </Grid>
                 <p
                   style={{
                     color: "#151F40",
                     fontFamily: "Inter",
-                    fontSize: "14.274px",
+                    fontSize: "10.2px",
                     fontStyle: "normal",
-                    fontWeight: "600",
+                    fontWeight: "400",
                     lineHeight: "normal",
                     margin: "0",
                   }}
                 >
-                  {agency.name}
+                  {agency.description}
                 </p>
               </Grid>
-              <p
-                style={{
-                  color: "#151F40",
-                  fontFamily: "Inter",
-                  fontSize: "10.2px",
-                  fontStyle: "normal",
-                  fontWeight: "400",
-                  lineHeight: "normal",
-                  margin: "0",
-                }}
-              >
-                {agency.description}
-              </p>
             </Grid>
-          </Grid>
+          </Link>
         ))}
       </Grid>
     </Grid>
