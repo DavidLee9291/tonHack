@@ -43,8 +43,9 @@ const Carousel: React.FC<CarouselProps> = ({ items }) => {
       }}
     >
       {items.map((item, index) => (
+        // TODO: 임시 링크 수정 필요
         <Link
-          to={`NFTDetail/${item.number}`}
+          to={`/tonHack/nftDetail/:1`}
           key={index}
           style={{ textDecoration: "none" }}
         >

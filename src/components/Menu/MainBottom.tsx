@@ -28,7 +28,7 @@ const MainBottom: React.FC = () => {
           alignItems: "center",
         }}
       >
-        <Link to="search">
+        <Link to={`/tonHack/search`}>
           <img
             src={search}
             alt="search"
