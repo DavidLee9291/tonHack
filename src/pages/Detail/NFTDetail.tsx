@@ -21,7 +21,7 @@ export default function NFTDetail(): JSX.Element {
   };
 
   return (
-    <Grid container item sx={{ background: "#F5F5F5", marginBottom: "200px" }}>
+    <Grid container item sx={{ background: "#F5F5F5", marginBottom: "30px" }}>
       <Grid container item xs={12} sx={{ alignItems: "center" }}>
         <img
           src={arrowLeft}
