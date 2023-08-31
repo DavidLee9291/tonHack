@@ -6,6 +6,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+	base:'/tonHack/',
 	// basicSsl()은 로컬에서 https를 실행하기 위함. 필요 없으면 삭제 후 실행
 	plugins: [react(), nodePolyfills(), tsconfigPaths()],
 	// plugins: [react(), nodePolyfills(), tsconfigPaths(), basicSsl()],
