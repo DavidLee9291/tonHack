@@ -1,35 +1,15 @@
 import "./App.css";
-import { TonConnectButton } from "@tonconnect/ui-react";
-import { useCounterContract, useTonConnect } from "./hook";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Main from "./pages/Main";
 
 function App() {
-  const { connected } = useTonConnect();
-  const { value, address, sendIncrement } = useCounterContract();
-
   return (
-    <div className="App">
-      <div className="Container">
-        <TonConnectButton />
-
-        <div className="Card">
-          <b>Counter Address</b>
-          <div className="Hint">{address?.slice(0, 30) + "..."}</div>
-        </div>
-
-        <div className="Card">
-          <b>Counter Value</b>
-          <div>{value ?? "Loading..."}</div>
-        </div>
-
-        <a
-          className={`Button ${connected ? "Active" : "Disabled"}`}
-          onClick={() => {
-            sendIncrement();
-          }}
-        >
-          Increment
-        </a>
-      </div>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/tonHack/main" element={<Main />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
