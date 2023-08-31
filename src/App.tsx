@@ -10,7 +10,9 @@ function App() {
     <div>
       <BrowserRouter basename="">
         <Routes>
-          <Route path="/tonHack" element={<Main />} />
+          {/* TODO: 임시 main path id 추가 추후 수정 필요 */}
+          <Route path="/tonHack/" element={<Main />} />
+          <Route path="/tonHack/:id" element={<Main />} />
           <Route path="/tonHack/search" element={<Search />} />
           <Route path="/tonHack/idolList/:id" element={<IdolList />} />
           <Route path="/tonHack/NFTDetail/:id" element={<NFTDetail />} />

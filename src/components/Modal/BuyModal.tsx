@@ -3,6 +3,7 @@ import "/src/App.css";
 import "/src/index.css";
 import { Grid, Modal } from "@mui/material";
 import bag from "../../assets/bag.svg";
+import { Link } from "react-router-dom";
 
 interface Props {
   open: boolean;
@@ -37,6 +38,8 @@ export default function BuyModal({ open, setOpen }: Props) {
     const handleBuy = () => {
       setVisible(false);
     };
+
+    //  TODO: 데이터 바인딩 필요
 
     return (
       <>
@@ -407,37 +410,39 @@ export default function BuyModal({ open, setOpen }: Props) {
                 container
                 sx={{ justifyContent: "center", marginTop: "20px" }}
               >
-                <button
-                  onClick={handleVisible}
-                  style={{
-                    width: "100%",
-                    padding: "8px",
-                    borderRadius: "32px",
-                    background: "#EE85A8",
-                    fontFamily: "Source Sans Pro",
-                    fontSize: "14px",
-                    fontStyle: "normal",
-                    fontWeight: 600,
-                    border: "0",
-                    boxShadow:
-                      "0px 4.59813px 4.59813px 0px rgba(0, 0, 0, 0.25)",
-                  }}
-                >
-                  <p
+                {/* TODO: 임시 링크 id 추후 수정 필요 */}
+                <Link to="/tonHack/1" style={{ width: "100%" }}>
+                  <button
+                    onClick={handleVisible}
                     style={{
-                      color: "white",
+                      width: "100%",
+                      padding: "8px",
+                      borderRadius: "32px",
+                      background: "#EE85A8",
                       fontFamily: "Source Sans Pro",
-                      fontSize: "13px",
+                      fontSize: "14px",
                       fontStyle: "normal",
                       fontWeight: 600,
-                      lineHeight: "160%",
-                      margin: "0",
+                      border: "0",
+                      boxShadow:
+                        "0px 4.59813px 4.59813px 0px rgba(0, 0, 0, 0.25)",
                     }}
                   >
-                    View My Profile
-                  </p>
-                </button>
-
+                    <p
+                      style={{
+                        color: "white",
+                        fontFamily: "Source Sans Pro",
+                        fontSize: "13px",
+                        fontStyle: "normal",
+                        fontWeight: 600,
+                        lineHeight: "160%",
+                        margin: "0",
+                      }}
+                    >
+                      View My Profile
+                    </p>
+                  </button>
+                </Link>
                 <button
                   id="buyAndKeepButton"
                   onClick={handleClose}
