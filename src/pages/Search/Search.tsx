@@ -25,6 +25,10 @@ const agencies = [
 export default function Search(): JSX.Element {
   const navigate = useNavigate();
   const [keyboardVisible, setKeyboardVisible] = useState(false);
+  useEffect(() => {
+    // 이동한 다음 페이지의 최상단으로 스크롤
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const handleResize = () => {

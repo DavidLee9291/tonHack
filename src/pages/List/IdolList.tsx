@@ -8,6 +8,7 @@ import idol2 from "../../assets/photo_list_2.svg";
 import idol5 from "../../assets/photo_list_5.svg";
 import idol6 from "../../assets/photo_list_6.svg";
 import dot from "../../assets/dot.svg";
+import { useEffect } from "react";
 
 // TODO: 임시 데이터 데이터 바인딩 필요
 const idols = [
@@ -68,6 +69,10 @@ const idols = [
 ];
 
 export default function IdolList(): JSX.Element {
+  useEffect(() => {
+    // 이동한 다음 페이지의 최상단으로 스크롤
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
 
   const goBack = () => {

@@ -6,12 +6,16 @@ import photo from "../../assets/photo_3.svg";
 import line from "../../assets/line.svg";
 
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NFTDetailTable from "src/components/Table/NFTDetailTable";
 import NFTDetailChart from "src/components/Chart/NFTDetailChart";
 import BuyModal from "src/components/Modal/BuyModal";
 
 export default function NFTDetail(): JSX.Element {
+  useEffect(() => {
+    // 이동한 다음 페이지의 최상단으로 스크롤
+    window.scrollTo(0, 0);
+  }, []);
   const navigate = useNavigate();
   const [tab, setTab] = useState(1);
   const [open, setOpen] = useState(false);
