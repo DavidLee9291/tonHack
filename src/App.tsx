@@ -7,7 +7,7 @@ import IdolList from "./pages/List/IdolList";
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename=''>
         <Routes>
           <Route path="/tonHack" element={<Main />} />
           <Route path="/tonHack/search" element={<Search />} />
