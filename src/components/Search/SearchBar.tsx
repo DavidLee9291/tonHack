@@ -19,7 +19,7 @@ export default function SearchBar() {
           borderRadius: "45.294px",
         }}
       >
-        <InputBase sx={{ ml: 1, flex: 1 }} />
+        <InputBase sx={{ ml: 1, flex: 1 }} name="search_bar" />
       </Paper>
       <IconButton
         type="button"
