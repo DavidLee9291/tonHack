@@ -55,7 +55,12 @@ export default function Search(): JSX.Element {
         xs={12}
         sx={{ justifyContent: "space-between", alignItems: "center" }}
       >
-        <Grid container item xs={3} sx={{ gap: "14px", alignItems: "center" }}>
+        <Grid
+          container
+          item
+          xs={3}
+          sx={{ gap: "14px", alignItems: "center", flexWrap: "nowrap" }}
+        >
           <img
             src={arrowLeft}
             alt="back"
@@ -87,7 +92,10 @@ export default function Search(): JSX.Element {
       <Grid
         container
         item
-        sx={{ marginTop: "17px", justifyContent: "space-between" }}
+        sx={{
+          marginTop: "17px",
+          justifyContent: "space-between",
+        }}
       >
         <p
           style={{
