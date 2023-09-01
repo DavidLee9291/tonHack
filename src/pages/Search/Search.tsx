@@ -48,7 +48,7 @@ export default function Search(): JSX.Element {
     navigate(-1); // 뒤로가기 실행
   };
   return (
-    <Grid container item sx={{ backgroud: "#F5F5F5", marginBottom: "200px" }}>
+    <Grid container item sx={{ backgroud: "#F5F5F5", marginBottom: "40px" }}>
       <Grid
         container
         item
