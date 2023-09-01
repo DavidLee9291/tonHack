@@ -73,7 +73,7 @@ export default function NFTDetailTable() {
       >
         <p
           style={{
-            color: "#EE85A8",
+            color: "#007AFF",
             fontFamily: "Inter",
             fontSize: "10px",
             fontStyle: "normal",
@@ -84,7 +84,7 @@ export default function NFTDetailTable() {
         ></p>
         <p
           style={{
-            color: "#EE85A8",
+            color: "#007AFF",
             fontFamily: "Inter",
             fontSize: "10px",
             fontStyle: "normal",
@@ -98,7 +98,7 @@ export default function NFTDetailTable() {
 
         <p
           style={{
-            color: "#EE85A8",
+            color: "#007AFF",
             fontFamily: "Inter",
             fontSize: "10px",
             fontStyle: "normal",

@@ -129,7 +129,11 @@ export default function Search(): JSX.Element {
         }}
       >
         {agencies.map((agency, index) => (
-          <Link key={index} to={`/tonHack/idolList/:${index}`}>
+          <Link
+            key={index}
+            to={`/tonHack/idolList/:${index}`}
+            style={{ textDecoration: "none" }}
+          >
             <Grid
               item
               style={{

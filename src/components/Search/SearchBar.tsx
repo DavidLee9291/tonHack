@@ -23,7 +23,7 @@ export default function SearchBar() {
       <button
         type="button"
         style={{
-          background: "#EE85A8",
+          background: "#007AFF",
           width: "45.235px",
           borderRadius: "18px",
           border: "0",

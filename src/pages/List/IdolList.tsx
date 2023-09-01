@@ -261,7 +261,11 @@ export default function IdolList(): JSX.Element {
                   {idol.creatorPrice} TON
                 </p>
               </Grid>
-              <Link key={index} to={`/tonHack/nftDetail/:${idol.id}`}>
+              <Link
+                key={index}
+                to={`/tonHack/nftDetail/:${idol.id}`}
+                style={{ textDecoration: "none" }}
+              >
                 <button
                   style={{
                     width: "100%",

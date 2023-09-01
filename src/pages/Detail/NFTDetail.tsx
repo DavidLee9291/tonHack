@@ -41,7 +41,10 @@ export default function NFTDetail(): JSX.Element {
         container
         item
         xs={12}
-        sx={{ justifyContent: "center", gap: "10px", marginTop: "19.29px" }}
+        sx={{
+          justifyContent: "center",
+          marginTop: "19.29px",
+        }}
       >
         <img
           src={photo}
@@ -112,7 +115,7 @@ export default function NFTDetail(): JSX.Element {
         container
         item
         xs={12}
-        sx={{ justifyContent: "center", gap: "10px", marginTop: "30px" }}
+        sx={{ justifyContent: "center", columnGap: "10px", marginTop: "30px" }}
       >
         <Grid container item xs>
           <button
@@ -122,7 +125,7 @@ export default function NFTDetail(): JSX.Element {
               height: "38px",
               flexShrink: "0",
               borderRadius: "19px",
-              background: tab === 1 ? "#EE85A8" : "#D9D9D9",
+              background: tab === 1 ? "#007AFF" : "#D9D9D9",
               boxShadow:
                 tab === 1
                   ? "0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
@@ -149,7 +152,7 @@ export default function NFTDetail(): JSX.Element {
               height: "38px",
               flexShrink: "0",
               borderRadius: "19px",
-              background: tab === 2 ? "#EE85A8" : "#D9D9D9",
+              background: tab === 2 ? "#007AFF" : "#D9D9D9",
               boxShadow:
                 tab === 2
                   ? "0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
@@ -296,7 +299,7 @@ export default function NFTDetail(): JSX.Element {
             height: "38px",
             flexShrink: "0",
             borderRadius: "19px",
-            background: tab === 2 ? "#EE85A8" : "#D9D9D9",
+            background: tab === 2 ? "#007AFF" : "#D9D9D9",
             boxShadow:
               tab === 2
                 ? "0px 4px 4px 0px rgba(0, 0, 0, 0.25)"

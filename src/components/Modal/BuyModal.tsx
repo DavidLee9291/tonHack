@@ -152,7 +152,7 @@ export default function BuyModal({ open, setOpen }: Props) {
                       alignItems: "center",
                       justifyContent: "center",
                       borderRadius: "21.841px",
-                      background: "#EE85A8",
+                      background: "#007AFF",
                       fontFamily: "Source Sans Pro",
                       fontSize: "14px",
                       fontStyle: "normal",
@@ -286,7 +286,7 @@ export default function BuyModal({ open, setOpen }: Props) {
                 <Grid item xs={12}>
                   <p
                     style={{
-                      color: "#EE85A8",
+                      color: "#007AFF",
                       fontFamily: "Inter",
                       fontSize: "12px",
                       fontStyle: "normal",
@@ -316,7 +316,7 @@ export default function BuyModal({ open, setOpen }: Props) {
                 <Grid item xs={12}>
                   <p
                     style={{
-                      color: "#EE85A8",
+                      color: "#007AFF",
                       fontFamily: "Inter",
                       fontSize: "12px",
                       fontStyle: "normal",
@@ -346,7 +346,7 @@ export default function BuyModal({ open, setOpen }: Props) {
                 <Grid item xs={12}>
                   <p
                     style={{
-                      color: "#EE85A8",
+                      color: "#007AFF",
                       fontFamily: "Inter",
                       fontSize: "12px",
                       fontStyle: "normal",
@@ -376,7 +376,7 @@ export default function BuyModal({ open, setOpen }: Props) {
                 <Grid item xs={12}>
                   <p
                     style={{
-                      color: "#EE85A8",
+                      color: "#007AFF",
                       fontFamily: "Inter",
                       fontSize: "12px",
                       fontStyle: "normal",
@@ -418,7 +418,7 @@ export default function BuyModal({ open, setOpen }: Props) {
                       width: "100%",
                       padding: "8px",
                       borderRadius: "32px",
-                      background: "#EE85A8",
+                      background: "#007AFF",
                       fontFamily: "Source Sans Pro",
                       fontSize: "14px",
                       fontStyle: "normal",

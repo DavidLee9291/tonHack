@@ -26,7 +26,7 @@ export default function Main(): JSX.Element {
             borderRadius: "19px",
             background: "#FFF",
             boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-            color: "#EE85A8",
+            color: "#007AFF",
             textAlign: "center",
             padding: "12px 25px",
             fontFamily: "Inter",
@@ -59,7 +59,7 @@ export default function Main(): JSX.Element {
             }}
           >
             Create your own idol group <br />
-            <span style={{ color: "#EE85A8" }}>
+            <span style={{ color: "#007AFF" }}>
               with your favorite idol NFTs!
             </span>
           </p>
@@ -93,7 +93,6 @@ export default function Main(): JSX.Element {
             position: "relative",
           }}
         >
-
           {/* TODO: 임시로 id로 보이게만 하였습니다. 수정 필요합니다.*/}
           {id ? (
             <Grid

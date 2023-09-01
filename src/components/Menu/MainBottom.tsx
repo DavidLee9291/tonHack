@@ -18,7 +18,7 @@ const MainBottom: React.FC = () => {
           flex: "0 0 auto",
           width: "203px",
           height: "52px",
-          background: "#D9D9D9",
+          background: "#007AFF",
           borderRadius: "26px",
           boxShadow: "0px 5.88046px 8.23264px 0px rgba(0, 0, 0, 0.25)",
 
