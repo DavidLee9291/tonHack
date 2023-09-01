@@ -19,7 +19,7 @@ export default function Main(): JSX.Element {
   }, []);
 
   return (
-    <Grid container item sx={{ backgroud: "#F5F5F5" }}>
+    <Grid container item sx={{ backgroud: "#F5F5F5", marginBottom: "40px" }}>
       <Grid container item sx={{ justifyContent: "space-between" }}>
         <p
           style={{
